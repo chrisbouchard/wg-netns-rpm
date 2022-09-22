@@ -9,7 +9,7 @@ License: MIT
 wg-quick with support for Linux network namespaces. A simple Python script that
 implements the steps described at wireguard.com/netns.
 
-Source: https://github.com/dadevel/wg-netns/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0: https://github.com/dadevel/wg-netns/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires: systemd-rpm-macros
 
