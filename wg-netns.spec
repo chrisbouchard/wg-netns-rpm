@@ -7,6 +7,8 @@ License: MIT
 
 Source: https://github.com/dadevel/wg-netns/archive/v%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires: systemd-rpm-macros
+
 Requires: /sbin/ip
 Requires: /usr/bin/wg
 Requires: python3 >= 3.7
