@@ -21,7 +21,10 @@ implements the steps described at wireguard.com/netns.
 %autosetup
 
 %install
+install --mode=755 --directory %{buildroot}%{_sbindir}
 install --mode=755 wg-netns.py %{buildroot}%{_sbindir}/wg-netns
+
+install --mode=755 --directory %{buildroot}%{_unitdir}
 install --mode=644 wg-netns@.service %{buildroot}%{_unitdir}/wg-netns@.service
 
 install --mode=700 --directory %{buildroot}%{_sysconfdir}/wireguard
