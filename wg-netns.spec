@@ -1,6 +1,6 @@
 Name: wg-netns
 Version: 2.0.1
-Release: 1
+Release: 2
 BuildArch: noarch
 Summary: WireGuard with Linux Network Namespaces
 License: MIT
