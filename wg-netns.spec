@@ -31,6 +31,15 @@ install --mode=644 wg-netns@.service %{buildroot}%{_unitdir}/wg-netns@.service
 
 install --mode=700 --directory %{buildroot}%{_sysconfdir}/wireguard
 
+%post
+%systemd_post wg-netns@.service
+
+%preun
+%systemd_preun wg-netns@.service
+
+%postun
+%systemd_postun wg-netns@.service
+
 %files
 %license LICENSE
 %doc README.md
