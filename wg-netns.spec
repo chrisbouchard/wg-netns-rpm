@@ -3,8 +3,11 @@ Version: 2.0.1
 Release: 1
 BuildArch: noarch
 Summary: WireGuard with Linux Network Namespaces
-
 License: MIT
+
+%description
+wg-quick with support for Linux network namespaces. A simple Python script that
+implements the steps described at wireguard.com/netns.
 
 Source: https://github.com/dadevel/wg-netns/archive/v%{version}/%{name}-%{version}.tar.gz
 
