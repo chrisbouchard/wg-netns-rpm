@@ -1,6 +1,6 @@
 Name: wg-netns
-Version: 2.0.1
-Release: 3%{?dist}
+Version: 2.1.0
+Release: 1%{?dist}
 BuildArch: noarch
 Summary: WireGuard with Linux Network Namespaces
 License: MIT
@@ -48,5 +48,7 @@ install --mode=700 --directory %{buildroot}%{_sysconfdir}/wireguard
 %dir %{_sysconfdir}/wireguard
 
 %changelog
+* Sun Oct 02 2022 Chris Bouchard <chris@upliftinglemma.net> - 2.1.0-1
+- Update to wg-netns 2.1.0
 * Fri Sep 23 2022 Chris Bouchard <chris@upliftinglemma.net> - 2.0.1-3
 - Added dist tag and changelog
